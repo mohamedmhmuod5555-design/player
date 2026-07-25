@@ -2,6 +2,8 @@ import random
 import streamlit as st 
 if 'num' not in st.session_state:
   st.session_state.num=0
+if 'count' not in st.session_state:
+  st.session_state.count=0
 if 'num1' not in st.session_state:
  st.session_state.num1=random.randint(1,20)
  st.session_state.num2=random.randint(1,20)
@@ -32,4 +34,4 @@ if st.button(" السؤال التالي "):
  del st.session_state.num2
  del st.session_state.sign
  st.rerun()
-st.write( st.session_state.num)
+st.write("your points are " ,st.session_state.num)
