@@ -1,7 +1,7 @@
 import random
 import streamlit as st 
 if 'num' not in st.session_state:
-  st.session_state.num
+  st.session_state.num=0
 if 'num1' not in session_state:
  st.session_state.num1=random.randint(1,20)
  st.session_state.num2=random.randint(1,20)
