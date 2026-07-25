@@ -25,7 +25,7 @@ number=st.number_input("ادخل النتيجه ")
 if st.button("تاكيد الاجابه "):
  if number==sc:
   st.success("you are winner ")
-  st.session_state.num=+1
+  st.session_state.num+=1
  else:
   st.error("your answer is not true ") 
   num=0
