@@ -24,7 +24,7 @@ st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
 if st.button("تاكيد الاجابه "):
   st.session_state.count+=1
-   if number==sc:
+  if number==sc:
     st.success("you are winner ")
     st.session_state.num+=1
  else:
