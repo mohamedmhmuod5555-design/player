@@ -22,10 +22,10 @@ st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
 if st.button("تاكيد الاجابه "):
  if number==sc:
-  print("you are winner ")
-  session_state.num=+1
+  st.success("you are winner ")
+  st.session_state.num=+1
  else:
-  print("your answer is not true ") 
+ st.error("your answer is not true ") 
   num=0
 if st.button(" السؤال التالي "):
  del st.session_state.num1 
