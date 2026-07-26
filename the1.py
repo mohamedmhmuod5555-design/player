@@ -2,6 +2,8 @@ import random
 import streamlit as st 
 if 'num' not in st.session_state:
   st.session_state.num
+if 'sc' not in st.session_state:
+  st.session_state.sc
 if 'count' not in st.session_state:
   st.session_state.count=0
 if 'num1' not in st.session_state:
@@ -28,7 +30,7 @@ if st.button("تاكيد الاجابه "):
     st.success("اجابتك صحيحه ! لقد احسنت  ")
     st.session_state.num+=1
   else:
-   st.error("اجابتك خاطءه ! الاجابه الصحيحه كانت  ",sc) 
+   st.error("اجابتك خاطءه ! الاجابه الصحيحه كانت  ",st.session_state.sc) 
    st.session_state.num=0
 if st.button(" السؤال التالي "):
  del st.session_state.num1 
