@@ -28,7 +28,7 @@ if st.button("تاكيد الاجابه "):
     st.success("you are winner ")
     st.session_state.num+=1
   else:
-  st.error("your answer is not true ") 
+   st.error("your answer is not true ") 
   st.session_state.num=0
 if st.button(" السؤال التالي "):
  del st.session_state.num1 
