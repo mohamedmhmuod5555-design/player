@@ -1,7 +1,7 @@
 import random
 import streamlit as st 
 if 'num' not in st.session_state:
-  st.session_state.num=0
+  st.session_state.num
 if 'count' not in st.session_state:
   st.session_state.count=0
 if 'num1' not in st.session_state:
