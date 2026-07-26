@@ -35,4 +35,4 @@ if st.button(" السؤال التالي "):
  del st.session_state.num2
  del st.session_state.sign
  st.rerun()
-st.write(f"your points are " ,st.session_state.num,"from{st.session_state.count}")
+st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
