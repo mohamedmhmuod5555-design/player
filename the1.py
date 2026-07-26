@@ -3,7 +3,7 @@ import streamlit as st
 if 'num' not in st.session_state:
   st.session_state.num
 if 'sc' not in st.session_state:
-  st.session_state.sc
+  st.session_state.sc=0
 if 'count' not in st.session_state:
   st.session_state.count=0
 if 'num1' not in st.session_state:
