@@ -33,11 +33,11 @@ if number == sc:
     del st.session_state.num2
     del st.session_state.sign
     st.rerun()
-  else:
-   st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت: {sc}") 
-   st.session_state.num=0
-   del st.session_state.num1 
-   del st.session_state.num2
-   del st.session_state.sign
-   st.rerun()
+   else:
+    st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت: {sc}") 
+    st.session_state.num=0
+    del st.session_state.num1 
+    del st.session_state.num2
+    del st.session_state.sign
+    st.rerun()
 st.write("your points are " ,st.session_state.num,"from",st.session_state.count,"Questions")
