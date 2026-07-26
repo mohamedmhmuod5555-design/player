@@ -24,7 +24,7 @@ if sign=='/':
 st.title("أهلا بك في لعبتي ")
 st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
- if number==sc:
+if number==sc:
      st.success("اجابتك صحيحه ! لقد احسنت  ")
      st.session_state.num+=1 
      del st.session_state.num1 
