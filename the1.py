@@ -26,9 +26,9 @@ st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
 if st.button("تاكيد الاجابه "):
   st.session_state.count+=1
- if number==sc:
-    st.success("اجابتك صحيحه ! لقد احسنت  ")
-    st.session_state.num+=1
+  if number==sc:
+     st.success("اجابتك صحيحه ! لقد احسنت  ")
+     st.session_state.num+=1
  if number == sc:  
     del st.session_state.num1 
     del st.session_state.num2
