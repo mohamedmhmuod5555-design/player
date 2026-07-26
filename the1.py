@@ -25,10 +25,10 @@ number=st.number_input("ادخل النتيجه ")
 if st.button("تاكيد الاجابه "):
   st.session_state.count+=1
   if number==sc:
-    st.success("you are winner ")
+    st.success("اجابتك صحيحه ! لقد احسنت  ")
     st.session_state.num+=1
   else:
-   st.error("your answer is not true ") 
+   st.error("اجابتك خاطءه ! الاجابه الصحيحه كانت  ",sc) 
    st.session_state.num=0
 if st.button(" السؤال التالي "):
  del st.session_state.num1 
