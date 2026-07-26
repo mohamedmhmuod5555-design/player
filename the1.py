@@ -29,7 +29,7 @@ if st.button("تاكيد الاجابه "):
     st.session_state.num+=1
   else:
    st.error("your answer is not true ") 
-  st.session_state.num=0
+   st.session_state.num=0
 if st.button(" السؤال التالي "):
  del st.session_state.num1 
  del st.session_state.num2
